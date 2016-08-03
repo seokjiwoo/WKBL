@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>WKBL</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+</head>
+<body>
+	<!-- wrapper -->
+	<article class="wrapper">
+
+		<!-- container -->
+		<section class="container">
+
+			<!-- subHeader -->
+			<header class="subHeader">
+				<a href="#" class="pageBack"><span class="textOut">뒤로가기</span></a>
+				<span class="pageTitle">SETTING</span>
+				<a href="#" class="gnbOpen"><em><span class="textOut">메뉴열기</span></em></a>
+			</header>
+			<!-- // subHeader -->
+
+			<!-- subContents -->
+			<section class="subContents">
+				
+				<div class="pushList">
+					<ul>
+						<li>
+							<span>푸쉬알림</span>
+							<em><input type="checkbox" id="push" onclick="onclickPush();" /></em>
+						</li>
+						<li>
+							<span>LIVE 시작 알림</span>
+							<em><input type="checkbox" id="live" class="chk" onclick="onclickLive();" /></em>
+						</li>
+						<li>
+							<span>새로운 동영상 업로드 알림</span>
+							<em><input type="checkbox" id="movie" class="chk" onclick="onclickMovie();" /></em>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+			<!-- subContents -->
+
+		</section>
+		<!-- // container -->
+
+	</article>
+	<!-- // wrapper -->
+
+<script>
+    var uuid = "${param.uuid}";
+
+    function onclickPush() {
+        var checked = $("#push").is(":checked");
+       
+        if ( checked == true ) {
+            $("#live").prop("checked", true);
+            $("#movie").prop("checked", true);
+        } else {
+            $("#live").prop("checked", false);
+            $("#movie").prop("checked", false);
+        }
+    }
+
+    function onclickLive() {
+        var checked = $("#live").is(":checked");
+
+        if (checked == true) {
+            $.post("setting_process.jsp", {uuid: uuid, value: "Y", field: "push_live"});
+        } else {
+            $.post("setting_process.jsp", {uuid: uuid, value: "N", field: "push_live"});
+        }
+    }
+
+    function onclickMovie() {
+        var checked = $("#movie").is(":checked");
+
+        if (checked == true) {
+            $.post("setting_process.jsp", {uuid: uuid, value: "Y", field: "push_movie"});
+        } else {
+            $.post("setting_process.jsp", {uuid: uuid, value: "N", field: "push_movie"});
+        }
+    }
+</script>
+	
+</body>
+</html>

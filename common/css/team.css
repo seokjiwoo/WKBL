@@ -1,0 +1,162 @@
+@charset "utf-8";
+.teamList02 ul li{border-top:1px solid #eee;}
+.teamList02 ul li:first-child{margin-top:0;}
+.teamList02 ul li:nth-child(odd){background:#fafafa;}
+.teamList02 ul li a{display:block;padding:5px 20px;}
+.teamList02 ul li a:after{content:"";display:block;clear:both;}
+.teamList02 .thumb{width:75px;display:block;}
+.teamList02 .thumb img{width:100%;vertical-align:top;}
+.teamList02 .txt{width:68%;display:block;line-height:1.4em;margin-top:20px;}
+.teamList02 .txt em{display:block;font-size:15px;}
+.teamList02 .txt span{text-transform:uppercase;color:#999;font-size:12px;}
+
+.teambgArea{background:url("../../images/team/img_dot_bg3.png") repeat-y 0 0;background-size:100%;}
+.teamDetail{padding:0 0 20px;}
+.uniformArea{text-align:center;padding-top:20px;margin-bottom:20px;}
+.uniformArea em{display:block;line-height:1.4em;color:#fff;font-size:15px;}
+.uniformArea .uniform{width:80px;height:76px;overflow:hidden;padding-top:4px;display:inline-block;margin-top:15px;background:#fff;border-radius:50%;}
+.uniformArea .uniform img{width:88%;vertical-align:middle;}
+
+.teamdis{position:relative;height:56px;overflow:hidden;padding:0 16px;line-height:1.6em;color:#fff;font-size:12px;}
+.teamdis.on{height:auto;}
+.teamMore{padding-right:16px;}
+.teamMore span{display:inline-block;padding:4px 10px 4px;text-decoration:underline;background:url("../../images/icon/icon_more_arr.png") no-repeat  right center;background-size:5px;color:#fff;font-size:12px;}
+
+.nextGame{height:50px;padding:0 22px;background:#e7e7e8;}
+.nextGame .nextInfo{padding-top:10px;}
+.nextGame .title,
+.nextGame .team{display:inline-block;font-size:12px;}
+.nextGame .title{padding:2px;background:#363636;color:#fff;}
+.nextGame .team{margin-left:20px;}
+.nextGame .team span{display:inline-block;}
+.nextGame .team span:nth-child(2){margin:0 4px;}
+.nextGame .team span img{width:30px;vertical-align:middle;}
+
+.playerPage{background:#fafafa;}
+.playerPage a{position:relative;height:45px;display:block;padding:0 0 0 45px;background:url("../../images/icon/icon_gnb_m05.png") no-repeat 17px center;background-size:25px;}
+.playerPage a:after{content:"";position:absolute;right:15px;top:13px;width:10px;height:19px;display:block;background:url("../../images/icon/icon_player_arr.png") no-repeat 0 center;background-size:32px;}
+.playerPage a span{line-height:1.4em;padding-top:13px;display:block;}
+
+.searchArea{position:fixed;left:0;top:40px;width:100%;max-width:640px;}
+.searchArea ul{padding:2px;background:#fff;}
+.searchArea ul li{margin-top:2px;}
+.searchArea ul li:first-child{margin-top:0;}
+.search{position:relative;padding:2px 26px 2px 2px;display:block;border:1px solid #e1e1e1;border-radius:4px;background:#eee;box-sizing:border-box;}
+.search input{width:100%;height:26px;border:0;background:#eee;color:#999;}
+.search button{position:absolute;top:0;right:0;width:26px;height:30px;background:url("../../images/icon/icon_search.png") no-repeat center center;background-size:15px;}
+
+.nameList{padding-top:70px;}
+.nameList .title{height:40px;padding-left:20px;background:#dd3497;}
+.nameList .title span{display:block;line-height:1.4em;padding-top:7px;color:#fff;font-size:18px;}
+.nameList ul li{border-top:1px solid #eee;}
+.nameList ul li:nth-child(odd){background:#fafafa;}
+.nameList ul li:first-child{border-top:0;}
+.nameList ul li a{height:50px;display:block;padding-left:20px;}
+.nameList ul li a span{display:block;padding-top:16px;line-height:1.4em;font-size:16px;}
+.nameList ul li a span em{color:#999;font-size:12px;}
+
+.playerPhoto{text-align:center;padding-top:20px;}
+.playerPhoto .thumb{position:relative;display:inline-block;}
+.playerPhoto .thumb span{width:142px;height:142px;overflow:hidden;display:inline-block;background:#fff;border:2px solid #fff;border-radius:50%;box-sizing:border-box;}
+.playerPhoto .thumb span img{width:100%;vertical-align:top;}
+.playerPhoto .thumb i{position:absolute;bottom:18px;right:2px;width:30px;height:30px;line-height:30px;display:block;text-align:center;background:#dd3497;border-radius:50%;color:#fff;}
+.playerPhoto p{line-height:1.4em;margin-top:10px;}
+.playerPhoto p img{width:20px;vertical-align:middle;}
+.playerPhoto p span{color:#fff;font-size:12px;}
+.playerPhoto p em{font-weight:bold;font-size:18px;}
+
+.playerInfo{border-bottom:1px solid #eee}
+.playerInfo ul:after{content:"";display:block;clear:both;}
+.playerInfo ul li{width:50%;height:55px;float:left;background:#fafafa;border-left:1px solid #eee;border-top:1px solid #eee;box-sizing:border-box;}
+.playerInfo ul li:nth-child(1),
+.playerInfo ul li:nth-child(3){border-left:0;}
+.playerInfo ul li:nth-child(1),
+.playerInfo ul li:nth-child(2){border-top:0;}
+.playerInfo ul li span{display:block;text-align:center;line-height:100%;font-size:12px;}
+.playerInfo ul li span:first-child{padding-top:14px;color:#999;}
+.playerInfo ul li span:first-child + span{margin-top:2px;}
+
+.seasonRecord ul:after{content:"";display:block;clear:both;}
+.seasonRecord ul li{width:25%;float:left;text-align:center;}
+.seasonRecord ul li span{width:75px;height:75px;display:inline-block;background:#11529c;border-radius:50%;}
+.seasonRecord ul li em{line-height:100%;display:block;color:#fff;}
+.seasonRecord ul li em:first-child{padding-top:24px;}
+.seasonRecord ul li em:first-child + em{margin-top:2px;}
+
+.etcList{padding-right:5px;}
+.etcList ul li{padding-left:10px;line-height:1.6em;font-size:12px;}
+
+em.tit01{position:relative;display:block;padding-left:10px;line-height:1.4em;color:#041e3f;font-weight:bold;}
+em.tit01:after{content:"";position:absolute;left:0;top:0;width:4px;height:19px;display:block;background:#dd3497;}
+
+/** 팀별 클래스 **/
+
+	/* 팀컬러 */
+		 /* KB스타즈 */
+		.team_color_01{color:#a99a85;}
+
+		 /* 삼성생명 */
+		.team_color_03{color:#1458f0;}
+
+		 /* 우리은행 */
+		.team_color_05{color:#22a5e6;}
+
+		 /* 신한은행 */
+		.team_color_07{color:#1602ae;}
+
+		/* KDB생명 */
+		.team_color_08{color:#ffce00;}
+
+		 /* KEB하나 */ 
+		.team_color_09{color:#f8226c;} 
+
+
+	/* 팀별 상단테두리 컬러 */
+		/* KB스타즈 */
+		.team_bdr_01{border-top:2px solid #a99a85 !important;}
+
+		 /* 삼성생명 */
+		.team_bdr_03{border-top:2px solid #1458f0 !important;}
+
+		 /* 우리은행 */
+		.team_bdr_05{border-top:2px solid #22a5e6 !important;}
+
+		/* 신한은행 */
+		.team_bdr_07{border-top:2px solid #1602ae !important;}
+
+		/* KDB생명 */
+		.team_bdr_08{border-top:2px solid #ffce00 !important;}
+
+		/* KEB하나 */ 
+		.team_bdr_09{border-top:2px solid #f8226c !important}
+
+
+	/* 팀배경 */
+		 /* KB스타즈 */
+		.team_bg_01{background-color:#a99a85;}
+		.team_bg_01 .teamDetail{background:url() no-repeat 0 0;background-size:100%;}
+
+		 /* 삼성생명 */
+		.team_bg_03{background-color:#1458f0;}
+		.team_bg_03 .teamDetail{background:url("../../images/team/team_bg_03.jpg") no-repeat 0 0;background-size:100%;}
+		
+		 /* 우리은행 */
+		.team_bg_05{background-color:#22a5e6;}
+		.team_bg_05 .teamDetail{background:url() no-repeat 0 0;background-size:100%;}
+		
+		 /* 신한은행 */
+		.team_bg_07{background-color:#1602ae;}
+		.team_bg_07 .teamDetail{background:url() no-repeat 0 0;background-size:100%;}
+		
+		 /* KDB생명 */
+		.team_bg_08{background-color:#ffce00;}
+		.team_bg_08 .teamDetail{background:url() no-repeat 0 0;background-size:100%;}
+		.team_bg_08 .teamdis,
+		.team_bg_08 em,
+		.team_bg_08 .teamMore a{color:#464646;}
+
+		 /* KEB하나 */
+		.team_bg_09{background-color:#f8226c;}
+		.team_bg_09 .teamDetail{background:url() no-repeat 0 0;background-size:100%;}
+
+/** 팀별  클래스 **/

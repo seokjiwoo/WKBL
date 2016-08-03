@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>WKBL</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+</head>
+<body>
+	<!-- wrapper -->
+	<article class="wrapper">
+
+		<!-- container -->
+		<section class="container">
+
+			<!-- subHeader -->
+			<header class="subHeader">
+				<a href="#" class="pageBack"><span class="textOut">뒤로가기</span></a>
+				<span class="pageTitle">GAME</span>
+				<a href="#" class="gnbOpen"><em><span class="textOut">메뉴열기</span></em></a>
+			</header>
+			<!-- // subHeader -->
+
+			<!-- subContents -->
+			<section class="subContents">
+				
+				<div class="gameTab">
+					<ul>
+						<li><a href="#"><span>경기일정 및 결과</span></a></li>
+						<li><a href="#"><span>팀순위</span></a></li>
+						<li><a href="#"><span>선수순위</span></a></li>
+						<li class="on"><a href="#"><span>승/패리포트</span></a></li>
+					</ul>
+				</div>
+
+				<div class="reportArea">
+					<a href="#" class="team left"><img src="../images/team/none_team.png" alt="" /></a>
+					<span>VS</span>
+					<a href="#" class="team right"><img src="../images/team/none_team.png" alt="" /></a>
+				</div>
+				<div class="tac"><a href="#" class="btn01"><span>기록보기 <img src="../images/icon/icon_more_arr.png" alt="" /></span></a></div>
+
+				<div class="layerpop">
+					<div class="title">
+						<em>원하시는 팀을 선택해주세요</em>
+						<a href="#" class="closeBtn"><span class="textOut"></span></a>
+					</div>
+					<div class="selectTeam">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_08.png" alt="" />
+									<span>KDB생명 위너스</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_03.png" alt="" />
+									<span>삼성생명 블루밍스</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_01.png" alt="" />
+									<span>KB스타즈</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_07.png" alt="" />
+									<span>신한은행 에스버드</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_05.png" alt="" />
+									<span>우리은행 한새</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../images/team/teamlogo_09.png" alt="" />
+									<span>KEB하나은행</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</section>
+			<!-- subContents -->
+
+		</section>
+		<!-- // container -->
+
+	</article>
+	<!-- // wrapper -->
+	<script>
+		$(window).load(function(){
+			var reportpop = new moduleUI.report();
+		});
+	</script>
+</body>
+</html>
